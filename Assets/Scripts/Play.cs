@@ -49,7 +49,6 @@ public class Play : MonoBehaviour
             isLoop = true;
             StartCoroutine(PlaySoundCoroutine());
             renderer.material.SetColor("_Color", Color.red);
-            Debug.Log("Looping");
             
         }
         else
@@ -57,8 +56,6 @@ public class Play : MonoBehaviour
             isLoop = false;
             StopCoroutine(PlaySoundCoroutine());
             renderer.material.SetColor("_Color", originalColor);
-            Debug.Log("not looping");
-            
         }
     }
 
